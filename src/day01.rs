@@ -27,12 +27,12 @@ fn similarity_score(data: &str) -> Result<u64> {
 mod tests {
     use super::*;
 
-    const EXAMPLE: &str = "3   4\n\
-                           4   3\n\
-                           2   5\n\
-                           1   3\n\
-                           3   9\n\
-                           3   3";
+    const EXAMPLE: &str = r"3   4
+4   3
+2   5
+1   3
+3   9
+3   3";
 
     #[test]
     fn example_1() -> Result<()> {
