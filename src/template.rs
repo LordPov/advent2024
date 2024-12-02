@@ -5,13 +5,17 @@ use anyhow::{Context, Result};
 mod tests {
     use super::*;
 
+    const EXAMPLE: &str = r"";
+
     #[test]
     fn example_1() -> Result<()> {
+        assert_eq!(EXAMPLE.len(), 0);
         Ok(())
     }
 
     #[test]
     fn example_2() -> Result<()> {
+        assert_eq!(EXAMPLE.len(), 0);
         Ok(())
     }
 
