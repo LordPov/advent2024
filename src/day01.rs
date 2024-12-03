@@ -11,14 +11,14 @@ fn load_data(data: &str) -> Result<(Vec<u64>, Vec<u64>)> {
     Ok((a, b))
 }
 
-fn sum_differences(data: &str) -> Result<u64> {
+pub fn sum_differences(data: &str) -> Result<u64> {
     let (mut a, mut b) = load_data(data)?;
     a.sort();
     b.sort();
     Ok(a.into_iter().zip(b.into_iter()).map(|(a, b)| a.abs_diff(b)).sum())
 }
 
-fn similarity_score(data: &str) -> Result<u64> {
+pub fn similarity_score(data: &str) -> Result<u64> {
     let (a, b) = load_data(data)?;
     Ok(a.into_iter().map(|a| a * b.iter().filter(|&&b| a == b).count() as u64).sum())
 }

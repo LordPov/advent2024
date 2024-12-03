@@ -47,11 +47,11 @@ fn report_safe_dampened(report: &Vec<i8>) -> bool {
     false
 }
 
-fn count_pure_safe_reports(data: &str) -> Result<usize> {
+pub fn count_pure_safe_reports(data: &str) -> Result<usize> {
     Ok(load_data(data)?.iter().filter(|&report| report_safe(report)).count())
 }
 
-fn count_dampened_safe_reports(data: &str) -> Result<usize> {
+pub fn count_dampened_safe_reports(data: &str) -> Result<usize> {
     Ok(load_data(data)?.iter().filter(|&report| report_safe_dampened(report)).count())
 }
 
