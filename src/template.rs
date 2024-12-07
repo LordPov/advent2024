@@ -1,5 +1,4 @@
 #[allow(dead_code, unused_imports)]
-use anyhow::{Context, Result};
 
 #[cfg(test)]
 mod tests {
@@ -8,26 +7,22 @@ mod tests {
     const EXAMPLE: &str = r"";
 
     #[test]
-    fn example_1() -> Result<()> {
+    fn example_1() {
         assert_eq!(EXAMPLE.len(), 0);
-        Ok(())
     }
 
     #[test]
-    fn example_2() -> Result<()> {
+    fn example_2() {
         assert_eq!(EXAMPLE.len(), 0);
-        Ok(())
     }
 
     #[test]
-    fn part_1() -> Result<()> {
+    fn part_1() {
         println!("Part 1: {}", include_str!("../res/day01.txt").len());
-        Ok(())
     }
 
     #[test]
-    fn part_2() -> Result<()> {
+    fn part_2() {
         println!("Part 2: {}", include_str!("../res/day01.txt").len());
-        Ok(())
     }
 }
