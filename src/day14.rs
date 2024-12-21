@@ -127,7 +127,7 @@ p=9,5 v=-3,-3";
 
     #[test]
     fn example_1() {
-        assert_eq!(safety_factor(EXAMPLE, EXAMPLE_X, EXAMPLE_Y, 100), 0);
+        assert_eq!(safety_factor(EXAMPLE, EXAMPLE_X, EXAMPLE_Y, 100), 12);
     }
 
     #[test]
